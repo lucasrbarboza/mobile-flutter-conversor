@@ -55,10 +55,13 @@ class _HomeState extends State<Home> {
         containerBtn
       ],
     );
+    SingleChildScrollView singleChildScrollView = SingleChildScrollView(
+      child: column,
+    );
     Scaffold scaffold = Scaffold(
       appBar: appBar,
       backgroundColor: Colors.white,
-      body: column,
+      body: singleChildScrollView,
     );
     return scaffold;
   }
